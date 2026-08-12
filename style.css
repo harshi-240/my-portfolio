@@ -1089,78 +1089,64 @@ span{
     color: var(--second-bg-color);
 }
 
-/* Responsive Design */
+/* ===== MOBILE RESPONSIVE ===== */
+
 @media (max-width: 768px) {
 
-    body {
-        width: 100%;
+    html {
+        font-size: 55%;
         overflow-x: hidden;
     }
 
-    .container {
-        width: 90%;
-        margin: auto;
+    body {
+        overflow-x: hidden;
     }
 
-    nav {
-        flex-direction: column;
-        gap: 15px;
+    section {
+        min-height: auto;
+        padding: 8rem 5% 5rem;
     }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .projects,
-    .skills,
-    .achievements {
-        grid-template-columns: 1fr;
-    }
-
-    .project-box,
-    .skill-box,
-    .achievement-box {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 26px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-}
-/* ===== MOBILE RESPONSIVE ===== */
-@media (max-width: 768px) {
 
     /* HEADER */
+
     .header {
-        padding: 15px 5%;
+        padding: 1.5rem 5%;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
     }
 
     .navbar {
-        flex-direction: column;
-        gap: 10px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-color);
+        padding: 1rem 5%;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.8rem;
+        margin: 2rem 0;
+        text-align: center;
     }
 
 
     /* HOME */
+
     .home {
         flex-direction: column;
         text-align: center;
-        padding: 80px 5% 50px;
+        padding-top: 10rem;
     }
 
     .home-content {
@@ -1168,39 +1154,45 @@ span{
     }
 
     .home-content h1 {
-        font-size: 36px;
+        font-size: 4rem;
     }
 
     .home-content h3 {
-        font-size: 22px;
+        font-size: 2.2rem;
     }
 
-    .home-img {
-        width: 100%;
-        margin-top: 30px;
+    .home-content p {
+        font-size: 1.4rem;
+        line-height: 1.6;
     }
 
-    .home-img img {
-        max-width: 75%;
-        height: auto;
+    .myphoto {
+        width: 75%;
+        max-width: 300px;
+        margin-top: 3rem;
+    }
+
+    .mine {
+        width: 75%;
+        max-width: 300px;
     }
 
 
     /* ABOUT */
+
     .about {
         flex-direction: column;
         text-align: center;
-        padding: 60px 5%;
+        gap: 3rem;
     }
 
     .about-img {
         width: 100%;
-        margin-bottom: 30px;
     }
 
     .about-img img {
-        max-width: 70%;
-        height: auto;
+        width: 70%;
+        max-width: 300px;
     }
 
     .about-content {
@@ -1208,35 +1200,66 @@ span{
     }
 
     .about-content h2 {
-        font-size: 32px;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .about-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .about-content p {
+        font-size: 1.4rem;
+        line-height: 1.7;
     }
 
 
     /* SKILLS */
+
     .services {
-        padding: 60px 5%;
+        padding: 8rem 5% 5rem;
+    }
+
+    .services h2 {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
     }
 
     .services-container {
+        display: grid;
         grid-template-columns: 1fr;
-        gap: 20px;
-        width: 100%;
+        gap: 2rem;
     }
 
-    .services-box {
+    .services-container .services-box {
+        grid-column: auto !important;
         width: 100%;
-        box-sizing: border-box;
+        padding: 2.5rem 2rem;
+    }
+
+    .services-box h3 {
+        font-size: 2rem;
+    }
+
+    .services-box p {
+        font-size: 1.4rem;
+        line-height: 1.6;
     }
 
 
-    /* GENERAL */
-    body {
-        width: 100%;
-        overflow-x: hidden;
+    /* SOCIAL ICONS */
+
+    .social-media a {
+        width: 3.8rem;
+        height: 3.8rem;
+        margin: 2rem .5rem;
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
+
+    /* BUTTON */
+
+    .btn {
+        font-size: 1.4rem;
+        padding: .8rem 2rem;
     }
 }
