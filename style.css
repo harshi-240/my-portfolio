@@ -285,6 +285,97 @@ span{
     color:var(--text-color);
 }
 
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        width: 100%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    /* HOME */
+    #home {
+        min-height: auto;
+        padding: 60px 20px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .home-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+
+    /* SERVICES */
+    #services {
+        padding: 50px 20px;
+        box-sizing: border-box;
+    }
+
+    .services-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* GENERAL */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1, h2, h3 {
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
 .service-modal {
     display: none;
     position: fixed;
