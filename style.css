@@ -1086,3 +1086,57 @@ span{
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projects,
+    .skills,
+    .achievements {
+        grid-template-columns: 1fr;
+    }
+
+    .project-box,
+    .skill-box,
+    .achievement-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
