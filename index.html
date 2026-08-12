@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Web Design</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <header class="header">
+    <a href ="#" class = "logo">Portfolio</a>
+    <i class='bx bx-menu' id = "menu-icon"></i>
+    <nav class="navbar">
+        <a href ="#home" class = "active">Home</a>
+        <a href ="#about">About</a>
+        <a href ="#services">Skills</a>
+        <a href ="#portfolio">Portfolio</a>
+        <a href ="#contact">Contact</a>
+    </nav>
+    </header>
+    <!-- home section -->
+    <section class="home" id ="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Harshita Patidar</h1>
+            <h3> And I'm an <span>Aspiring AI Engineer.</span></h3>
+            <p>Driven by curiosity, powered by technology.</p>
+                <br>
+            <div class= "social-media">
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.linkedin.com/in/harshita-patidar-931919376"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://github.com/harshi-240"><i class='bx bxl-github'></i></a>
+               
+            </div>
+            <a href="resume.pdf" class="btn">Download Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="Mine.jpeg" class = "myphoto">
+        </div>
+    </section>
+    <!--about-->
+    <section class="about" id = "about">
+        <div class="about-img">
+            <img src="Mine2.jpeg" class = "mine">
+        </div>
+        <div class ="about-content">
+            <h2 class ="heading"> About <span>Me</span></h2>
+            <h3>Python Developer| AI Enthusiast</h3>
+            <p>I’m a Computer Science student passionate about Python, Artificial Intelligence, and software development.
+                 I enjoy building practical projects, exploring new technologies, and turning ideas into useful applications. 
+                 With strong analytical thinking and logical reasoning, I approach problems with curiosity and look for effective solutions. 
+                I’m continuously learning and improving my technical and problem-solving skills.</p>
+                <a href="#" class="btn"
+                onclick="event.preventDefault();openAbout()">Read More</a>
+        </div>
+       
+    </section>
+ <!-- Read More Popup -->
+<div id="aboutModal" class="about-modal">
+
+    <div class="about-modal-content">
+
+        <span class="close-btn" onclick="closeAbout()">&times;</span>
+
+        <h2>More <span>About Me</span></h2>
+
+        <h3>My Creative Side</h3>
+        <p>
+            Beyond technology, I enjoy expressing my creativity through
+            mandala and other artwork. Art allows me to explore my
+            imagination while improving my patience, concentration,
+            and attention to detail.
+        </p>
+
+        <h3>My Technical Interests</h3>
+        <p>
+            I’m particularly interested in Python, Artificial Intelligence,
+            and software development. I enjoy building projects and
+            applying what I learn to solve real-world problems.
+        </p>
+
+        <h3>What I Enjoy</h3>
+        <p>
+            I enjoy learning new concepts, experimenting with ideas,
+            building projects, and finding logical and creative solutions
+            to problems.
+        </p>
+
+        <h3>My Goals</h3>
+        <p>
+            My goal is to continuously improve my technical skills,
+            work on meaningful projects, and grow as a developer.
+            I want to explore AI and emerging technologies while
+            building useful and innovative solutions.
+        </p>
+
+        <h3> My Journey</h3>
+        <p>
+            I believe every project and challenge is an opportunity
+            to learn something new. I want to combine my technical
+            knowledge with creativity and continue growing as a developer.
+        </p>
+
+    </div>
+
+</div>
+    <!--services-->
+
+    <section class = "services" id ="services">
+        <h2 class="heading">My<span> Skills & Expertise</span></h2>
+         <div class ="services-container">
+            <div class="services-box">
+                <i class='bx bxl-python'></i>
+                <h3>Python Development</h3>
+                <p>Building Python-based application with focus on clean,efficient,and practical solution. Exploring automation,problem solving,and application development using Python.</p>
+                <a href="#" class="btn"
+                onclick="event.preventDefault(); openService('python')">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Creating user-friendly webistes using HTML,CSS,and JavaScript.Focused on clean design,functionality,and a smooth user experience.</p>
+                <a href="#" class="btn"
+                onclick="event.preventDefault();openService('web')">Read More</a>
+            </div>
+            <div class="services-box">
+              <i class='bx bx-bar-chart-alt' ></i>
+                <h3> Exploratory Data Analysis</h3>
+                <p>Working with data to clean,analyze,and visualize meaningful insights.Using Python libraries and analytical techniques to understand and present data effectively.</p>
+                <a href="#" class="btn"
+                onclick="event.preventDefault();openService('data')">Read More</a>
+            </div>
+            <div class="services-box">
+             <i class='bx bxs-brain'></i>
+                <h3>AI and Prompt Engineering</h3>
+                <p>Exploring AI-driven solutions and effective prompt engineering techniques.Intrested in building practical applications by combining AI tools with programming.</p>
+                <a href="#" class="btn"
+                onclick="event.preventDefault();openService('ai')">Read More</a>
+            </div>
+            <div class="services-box">
+             <i class='bx bxs-data'></i>
+                <h3>Database Management</h3>
+                <p>Working with SQL and MongoDB to store, organize, and manage data efficiently.Understanding database operations,queries,and structured data management.</p>
+                <a href="#" class="btn"
+                onclick="event.preventDefault();openService('database')">Read More</a>
+            </div>
+         </div>
+    </section>
+    <!-- Service Read More Popup -->
+
+<div id="serviceModal" class="service-modal">
+    <div class="service-modal-content">
+
+        <span class="close-btn" onclick="closeService()">&times;</span>
+
+        <h2 id="serviceTitle"></h2>
+
+        <div id="serviceText"></div>
+    </div>
+</div>
+    <!--portfolio-->
+
+          
+
+
+
+<section class="portfolio" id="portfolio">
+
+    <h2 class="heading">My <span>Projects</span></h2>
+
+    <div class="projects-container">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card"
+             onclick="openProject('expense')">
+
+            <h3>Expense Tracker</h3>
+
+            <div class="project-photo">
+                <img src="Expense_tracker.jpeg"
+                     alt="Expense Tracker">
+            </div>
+
+            <p>Click to explore my project</p>
+
+        </div>
+
+
+        <!-- PROJECT 2 -->
+        <div class="project-card"
+             onclick="openProject('ai')">
+
+            <h3>Personal AI Tool</h3>
+
+            <div class="project-photo">
+                <img src="AI_Tool.jpeg"
+                     alt="Personal AI Tool">
+            </div>
+
+            <p>Click to explore my project</p>
+
+        </div>
+
+
+        <!-- PROJECT 3 -->
+        <div class="project-card"
+             onclick="openProject('portfolio')">
+
+            <h3>Personal Portfolio</h3>
+
+            <div class="project-photo">
+                <img src="My.jpeg"
+                     alt="Personal Portfolio">
+            </div>
+
+            <p>Click to explore my project</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<div id="projectModal" class="project-modal">
+
+    <div class="project-modal-content">
+
+        <span class="close-project"
+              onclick="closeProject()">&times;</span>
+
+        <h2 id="projectTitle"></h2>
+
+        <div id="projectDetails"></div>
+
+    </div>
+
+</div>
+
+
+
+<section class="certifications" id="certifications">
+
+    <h2 class="heading">
+        Certifications <span>& Achievements</span>
+    </h2>
+
+    <div class="certifications-container">
+
+        <!-- 1. Python -->
+        <div class="certificate-card"
+             onclick="openCertificate('python')">
+
+            <h3>Python Certification</h3>
+
+            <p>Click to view certificate</p>
+
+        </div>
+
+
+        <!-- 2. AI Primer -->
+        <div class="certificate-card"
+             onclick="openCertificate('ai')">
+
+            <h3>AI Primer Certification</h3>
+
+            <p>Click to view certificate</p>
+
+        </div>
+
+
+        <!-- 3. Prompt Engineering -->
+        <div class="certificate-card"
+             onclick="openCertificate('prompt')">
+
+            <h3>Prompt Engineering Certification</h3>
+
+            <p>Click to view certificate</p>
+
+        </div>
+
+
+        <!-- 4. Exploratory Data Analysis -->
+        <div class="certificate-card"
+             onclick="openCertificate('eda')">
+
+            <h3>Exploratory Data Analysis</h3>
+
+            <p>
+                Click to view certificate
+            </p>
+
+        </div>
+
+
+        <!-- 5. Thinkathon -->
+        <div class="certificate-card"
+             onclick="openCertificate('thinkathon')">
+
+            <h3>Thinkathon 2026 Winner</h3>
+
+            <p>Click to view certificate</p>
+
+        </div>
+
+
+        <!-- 6. Generative AI -->
+        <div class="certificate-card"
+             onclick="openCertificate('genai')">
+
+            <h3>Generative AI Webinar</h3>
+
+            <p>Click to view certificate</p>
+
+        </div>
+
+    </div>
+
+
+
+    <p class="more-certificates">
+        And many more certifications, achievements, and learning experiences.
+    </p>
+
+</section>
+<div id="certificateModal" class="certificate-modal">
+
+    <div class="certificate-modal-content">
+
+        <span class="close-certificate"
+              onclick="closeCertificate()">
+            &times;
+        </span>
+
+        <h2 id="certificateTitle"></h2>
+
+        <div id="certificateImages"></div>
+
+    </div>
+
+</div>
+<div class="internship-content">
+
+        <div class="internship-info">
+
+            <h3>AI-EMPOW(H)ER Internship </h3>
+
+            <h4>Infosys Springboard</h4>
+
+            <p>
+                During this internship, I explored Artificial Intelligence
+                concepts and worked on practical applications while
+                strengthening my technical and problem-solving skills.
+            </p>
+
+            <div class="internship-tech">
+                <span>Python</span>
+                <span>AI</span>
+                <span>Streamlit</span>
+                <span>Prompt Engineering</span>
+            </div>
+
+            <button onclick="openInternship()">
+                View Certificate →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<div id="internshipModal" class="certificate-modal">
+
+    <div class="certificate-modal-content">
+
+        <span class="close-certificate"
+              onclick="closeInternship()">&times;</span>
+
+        <h2>AI-EMPOW(H)ER Internship</h2>
+
+        <div id="internshipCertificate"></div>
+
+    </div>
+
+</div>
+
+
+<section class="contact" id="contact">
+
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form id="contactForm">
+
+        <div class="input-box">
+
+            <input type="text"
+                   id="name"
+                   placeholder="Full Name"
+                   required>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Email Address"
+                   required>
+
+        </div>
+
+        <div class="input-box">
+
+            <input type="tel"
+                   id="mobile"
+                   placeholder="Mobile Number">
+
+            <input type="text"
+                   id="subject"
+                   placeholder="Subject"
+                   required>
+
+        </div>
+
+        <textarea
+            id="message"
+            rows="8"
+            placeholder="Your Message"
+            required></textarea>
+
+        <input type="submit"
+               value="Send Message"
+               class="btn">
+
+    </form>
+
+    <p id="formStatus"></p>
+
+</section>
+
+<!--footer-->
+<footer class="footer">
+<div class="footer-text">
+    <p>Copyright &copy; 2026 by Harshita_Patidar | All Rights Reserved.</p>
+</div>
+<div class="footer-iconTop">
+    <a href ="#home"> <i class='bx bx-up-arrow-alt'></i></a>
+</div>
+</footer>
+  
+
+  
+
+
+
+
+    <script src = "app.js"></script>
+    
+</body>
+</html>
