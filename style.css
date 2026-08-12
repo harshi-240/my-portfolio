@@ -1089,34 +1089,19 @@ span{
     color: var(--second-bg-color);
 }
 
-/* ===== MOBILE RESPONSIVE ===== */
-
 @media (max-width: 768px) {
 
-    html {
-        font-size: 55%;
-        overflow-x: hidden;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-
-    section {
-        min-height: auto;
-        padding: 8rem 5% 5rem;
-    }
-
-
-    /* HEADER */
-
     .header {
-        padding: 1.5rem 5%;
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 2rem;
     }
 
     #menu-icon {
         display: block;
-        cursor: pointer;
+        font-size: 3rem;
     }
 
     .navbar {
@@ -1125,8 +1110,8 @@ span{
         top: 100%;
         left: 0;
         width: 100%;
-        background: var(--bg-color);
         padding: 1rem 5%;
+        background: var(--bg-color);
     }
 
     .navbar.active {
@@ -1135,131 +1120,8 @@ span{
 
     .navbar a {
         display: block;
-        font-size: 1.8rem;
         margin: 2rem 0;
         text-align: center;
-    }
-
-
-    /* HOME */
-
-    .home {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 10rem;
-    }
-
-    .home-content {
-        width: 100%;
-    }
-
-    .home-content h1 {
-        font-size: 4rem;
-    }
-
-    .home-content h3 {
-        font-size: 2.2rem;
-    }
-
-    .home-content p {
-        font-size: 1.4rem;
-        line-height: 1.6;
-    }
-
-    .myphoto {
-        width: 75%;
-        max-width: 300px;
-        margin-top: 3rem;
-    }
-
-    .mine {
-        width: 75%;
-        max-width: 300px;
-    }
-
-
-    /* ABOUT */
-
-    .about {
-        flex-direction: column;
-        text-align: center;
-        gap: 3rem;
-    }
-
-    .about-img {
-        width: 100%;
-    }
-
-    .about-img img {
-        width: 70%;
-        max-width: 300px;
-    }
-
-    .about-content {
-        width: 100%;
-    }
-
-    .about-content h2 {
-        text-align: center;
-        font-size: 3.5rem;
-    }
-
-    .about-content h3 {
-        font-size: 2.2rem;
-    }
-
-    .about-content p {
-        font-size: 1.4rem;
-        line-height: 1.7;
-    }
-
-
-    /* SKILLS */
-
-    .services {
-        padding: 8rem 5% 5rem;
-    }
-
-    .services h2 {
-        font-size: 3.5rem;
-        margin-bottom: 3rem;
-    }
-
-    .services-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .services-container .services-box {
-        grid-column: auto !important;
-        width: 100%;
-        padding: 2.5rem 2rem;
-    }
-
-    .services-box h3 {
-        font-size: 2rem;
-    }
-
-    .services-box p {
-        font-size: 1.4rem;
-        line-height: 1.6;
-    }
-
-
-    /* SOCIAL ICONS */
-
-    .social-media a {
-        width: 3.8rem;
-        height: 3.8rem;
-        margin: 2rem .5rem;
-    }
-
-
-    /* BUTTON */
-
-    .btn {
-        font-size: 1.4rem;
-        padding: .8rem 2rem;
+        font-size: 1.8rem;
     }
 }
